@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap');
+
+:root {
+    --container-width: 1120px;
+    --header-container-width: 1292px;
+
+    --primary-color: #14A4D8;
+    --secondary-color: #F96E46;
+
+    --text-color-1: #333;
+    --text-color-2: #7B7B7B;
+    --text-color-3: #B0B0B0;
+    --text-color-placeholder: #757575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Jost', sans-serif;
+    color: var(--text-color-1);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+input, select, option, textarea, button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: auto;
+    padding-inline: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--secondary-color);
+    color: #FFF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form-field {
+    display: inline-block;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: var(--text-color-placeholder);
+}
+
+.btn-large, .form-field-large {
+    padding: 25px;
+    font-size: 1.2em;
+}
+
+.main-header {
+    position: absolute;
+    top: 0;
+    padding-block: 12px;
+}
+
+.header-container {
+    max-width: var(--header-container-width);
+    margin: auto;
+    padding-inline: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo h1 {
+    display: none;
+}
+
+.header-logo img {
+    width: 216px;
+}
+
+.navigation .menu {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.navigation .menu-item a {
+    color: #FFF;
+    display: inline-block;
+    margin-inline: 10px;
+    font-size: 1.2em;
+}
+
+.hero {
+    height: 770px;
+    background: url("../images/hero-banner.png") no-repeat center center;
+    padding-bottom: 154px;
+}
+
+.hero .container {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.hero header {
+    display: none;
+}
+
+.search-form {
+    display: grid;
+    grid-template-columns: 2fr 3fr 4fr 1fr;
+    gap: 16px;
+}
+
+.search-form .date {
+    display: inline-flex;
+}
+
+.search-form .date input#date-start {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.search-form .date input#date-end {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}

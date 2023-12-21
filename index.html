@@ -6,124 +6,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vivango</title>
 
-  <!-- Bootstrap CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-info">
-      <div class="container">
+  <header class="main-header container-fluid">
+    <div class="header-container">
+      <div class="header-logo">
+        <h1>Vivango</h1>
 
-        <div class="row container-fluid">
-          <div class="col-2">
-            <a class="navbar-brand" href="#">
-              <img src="assets/images/logo-1.svg" alt="Logo Vivango">
-            </a>
-          </div>
-
-          <div class="col-8">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Explore</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Ofertas</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pacotes</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Passeios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Marítmo</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Aventura</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-2">
-            <button>Entre ou cadastre-se</button>
-          </div>
-        </div>
+        <a href="#">
+          <img src="assets/images/logo-1.svg" alt="Logo Vivango">
+        </a>
       </div>
-    </nav>
+
+      <nav class="navigation">
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#">Explore</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">Ofertas</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">Pacotes</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">Passeios</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">Marítmo</a>
+          </li>
+
+          <li class="menu-item">
+            <a href="#">Aventura</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="login">
+        <button class="btn">Entre ou cadastre-se</button>
+      </div>
+    </div>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container-fluid">
+    <section class="hero container-fluid">
+      <div class="container">
         <header>
-          <h1>Experiências Inesquecíveis</h1>
+          <h1>Experiências <span>Inesquecíveis</span></h1>
         </header>
 
         <div class="search">
-          <form action="">
-            <input type="text" name="location" id="location" placeholder="Localização">
-            <input type="text" name="search" id="search" placeholder="Que aventura procura?">
+          <form action="" class="search-form">
+            <input type="text" name="location" id="location" placeholder="Localização" class="form-field form-field-large">
+            <input type="text" name="adventure" id="adv" placeholder="Que aventura procura?" class="form-field form-field-large">
 
-            <div>
-              <select name="init-date" id="init-date">
-                <option value="">18 de setembro</option>
-              </select>
-
-              <select name="final-date" id="final-date">
-                <option value="">19 de setembro</option>
-              </select>
+            <div class="date">
+              <input type="date" name="date-start" id="date-start" class="form-field form-field-large">
+              <input type="date" name="date-end" id="date-end" class="form-field form-field-large">
             </div>
 
-            <button type="submit">Pesquisar</button>
+            <button type="submit" class="btn btn-large">Pesquisar</button>
           </form>
         </div>
       </div>
     </section>
 
     <section class="adventure">
-      <div class="container">
-        <header>
-          <h1>Aventure-se</h1>
-        </header>
-
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Todos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pacotes</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Passeios</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Marítmo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Aventura</a>
-          </li>
-        </ul>
-
-        <div class="d-flex flex-nowrap"></div>
-      </div>
+      
     </section>
   </main>
 
   <footer></footer>
-
-  <!-- Bootstrap CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 </body>
 
 </html>
