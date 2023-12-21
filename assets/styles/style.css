@@ -94,6 +94,17 @@ input, select, option, textarea, button {
     background: url("../images/title-line.png") no-repeat center bottom;
 }
 
+.cards-wrapper {
+    width: 100%;
+    height: fit-content;
+}
+
+.cards-roll {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
 .card {
     display: block;
     border-radius: 10px;
@@ -205,8 +216,18 @@ input, select, option, textarea, button {
     background-color: var(--primary-color);
 }
 
+.adventure-card {
+    flex-basis: 33.33%;
+    min-width: 374px;
+}
+
 .adventure-card .image {    
     position: relative;
+}
+
+.adventure-card .image img {
+    width: 100%;
+    object-fit: cover;
 }
 
 .adventure-card .image .rating {
@@ -232,8 +253,12 @@ input, select, option, textarea, button {
     background-color: var(--primary-color);
 }
 
+.adventure-card .info {
+    padding-top: 20px;
+}
+
 .adventure-card .info .title h2 {
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 
 .adventure-card .info .detail {
