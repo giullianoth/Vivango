@@ -53,6 +53,10 @@ input, select, option, textarea, button {
     margin-block: 30px;
 }
 
+.container-spacing-2 {
+    padding-block: 30px;
+}
+
 .btn {
     display: inline-block;
     padding: 10px;
@@ -96,13 +100,13 @@ input, select, option, textarea, button {
 
 .cards-wrapper {
     width: 100%;
-    height: fit-content;
 }
 
 .cards-roll {
     display: flex;
     justify-content: flex-start;
     gap: 20px;
+    flex-wrap: nowrap;
 }
 
 .card {
@@ -188,6 +192,11 @@ input, select, option, textarea, button {
     border-bottom-left-radius: 0;
 }
 
+.adventure {
+    overflow: hidden;
+    padding-bottom: 6px;
+}
+
 .adventure-tabs {
     width: fit-content;
     margin: 0 auto 40px auto;
@@ -268,4 +277,15 @@ input, select, option, textarea, button {
 .adventure-card .info .detail span {
     color: var(--text-color-3);
     font-weight: 400;
+}
+
+.choose-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 4px 0 4px 4px;
+}
+
+.choose-card header {
+    margin-right: 20px;
 }
