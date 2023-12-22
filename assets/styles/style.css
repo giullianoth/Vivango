@@ -13,6 +13,7 @@
     --text-color-placeholder: #757575;
 
     --shadow-color: #00000029;
+    --nav-color: #A7B2C9;
 }
 
 * {
@@ -114,6 +115,7 @@ input, select, option, textarea, button {
     border-radius: 10px;
     box-shadow: 0 3px 6px var(--shadow-color);
     width: fit-content;
+    overflow: hidden;
 }
 
 .card-info {
@@ -158,7 +160,7 @@ input, select, option, textarea, button {
 
 .hero {
     height: 770px;
-    background: url("../images/hero-banner.png") no-repeat center center;
+    background: url("../images/hero-banner.png") no-repeat center center / cover;
     padding-bottom: 154px;
 }
 
@@ -239,7 +241,7 @@ input, select, option, textarea, button {
     object-fit: cover;
 }
 
-.adventure-card .image .rating {
+.adventure-card .image .card-rating {
     position: absolute;
     top: 14px;
     left: 14px;
@@ -279,6 +281,12 @@ input, select, option, textarea, button {
     font-weight: 400;
 }
 
+.choose-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .choose-card {
     display: flex;
     align-items: center;
@@ -288,4 +296,57 @@ input, select, option, textarea, button {
 
 .choose-card header {
     margin-right: 20px;
+}
+
+.choose-nav {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.choose-nav .nav-item {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--nav-color);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.choose-nav .nav-item.active {
+    background-color: var(--primary-color);
+    position: relative;
+}
+
+.choose-nav .nav-item.active::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+}
+
+.rating-card {
+    flex-basis: 45%;
+    display: flex;
+}
+
+.rating-card .image {
+    flex-basis: 50%;
+}
+
+.rating-card .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.rating-info {
+    flex-basis: 50%;
 }
