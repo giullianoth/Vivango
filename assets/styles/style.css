@@ -41,6 +41,13 @@ input, select, option, textarea, button {
     outline: none;
 }
 
+input, select, option, textarea {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    color: inherit;
+}
+
 .container-fluid {
     width: 100%;
 }
@@ -403,4 +410,82 @@ input, select, option, textarea, button {
 
 .rating-info .price-action .btn {
     font-weight: 400;
+}
+
+.optin {
+    padding-block: 65px;
+    background: #14a4d8af;
+    color: #FFF;
+}
+
+.optin header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.optin-content {
+    max-width: 542px;
+    margin: auto;
+}
+
+.optin-form {
+    display: grid;
+    grid-template-columns: 3fr 5fr 2fr;
+    gap: 16px;
+    margin-bottom: 10px;
+}
+
+.optin-content .agree {
+    font-size: 0.875em;
+}
+
+.optin-content .agree a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.footer {
+    background: var(--primary-color);
+    color: #FFF;
+}
+
+.footer-navigation {
+    padding-block: 48px 40px;
+    display: flex;
+    gap: 60px;
+}
+
+.footer-navigation .logo h1 {
+    display: none;
+}
+
+.footer-navigation .logo p {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+}
+
+.footer-navigation .logo .devices div {
+    display: inline-block;
+    width: 117px;
+    height: 35px;
+    border: 1px solid #FFF;
+}
+
+.footer-navigation .menu {
+    font-size: 1.3em;
+}
+
+.footer-navigation .menu li {
+    line-height: 1.8;
+}
+
+.footer-navigation .menu a {
+    color: inherit;
+}
+
+.footer .rights {
+    background: rgba(0, 0, 0, 0.26);
+    padding-block: 18px 8px;
+    text-align: center;
+    font-size: 1.3em;
 }
