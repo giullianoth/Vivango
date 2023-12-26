@@ -78,6 +78,10 @@ input, select, option, textarea {
     cursor: pointer;
 }
 
+.btn-primary {
+    background-color: var(--primary-color);
+}
+
 .form-field {
     display: inline-block;
     padding: 10px;
@@ -165,6 +169,15 @@ input, select, option, textarea {
     display: inline-block;
     margin-inline: 10px;
     font-size: 1.2em;
+}
+
+.main-header.shaded {
+    box-shadow: 0 3px 6px var(--shadow-color);
+}
+
+.main-header.shaded .navigation .menu-item a {
+    color: #333;
+    font-weight: 600;
 }
 
 .hero {
