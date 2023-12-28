@@ -1,0 +1,20 @@
+@import "variables";
+
+$theme-colors: (
+    "pictonBlue"   :    $color-pictonBlue,
+    "cerulean"     :      $color-cerulean,
+    "burntSienna"  :   $color-burntSienna,
+    "amber"        :         $color-amber,
+    "powderBlue"   :    $color-powderBlue,
+    "jet"          :           $color-jet,
+    "silver"       :        $color-silver,
+    "whiteSmoke"   :    $color-whiteSmoke,
+    "silver2"      :       $color-silver2,
+    "gray"         :          $color-gray,
+    "gray2"        :         $color-gray2,
+    "white"        :         $color-white,
+    "black"        :         $color-black,
+    "blackAlpha161": $color-blackAlpha161,
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
