@@ -153,6 +153,10 @@ input, select, option, textarea {
     padding: 14px;
 }
 
+.regular-text p {
+    margin-block: 24px;
+}
+
 .main-header {
     position: absolute;
     top: 0;
@@ -542,11 +546,16 @@ input, select, option, textarea {
     font-size: 2em;
 }
 
+.detail-subtitle {
+    font-size: 1.6em;
+}
+
 .detail-photos {
     height: 396px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 7px;
+    margin-bottom: 26px;
 }
 
 .detail-photos .featured, .detail-photos .gallery {
@@ -569,4 +578,117 @@ input, select, option, textarea {
 
 .detail-photos .gallery-photo {
     overflow: hidden;
+}
+
+.description {
+    display: flex;
+    flex-grow: 1;
+}
+
+.description .information {
+    flex-basis: 60%;
+}
+
+.description .confirm {
+    flex-basis: 40%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+.description .information .price {
+    margin-bottom: 20px;
+}
+
+.description .information .price p {
+    font-weight: 600;
+}
+
+.description .information .price p span {
+    font-size: 2em;
+}
+
+.description .information .additional-details {
+    margin-bottom: 20px;
+    padding: 10px 21px;
+    font-weight: 600;
+    position: relative;
+}
+
+.description .information .additional-details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+}
+
+.description .information .additional-details span {
+    color: var(--text-color-3);
+    font-weight: 400;
+}
+
+.description .information .itinerary {
+    margin-bottom: 20px;
+}
+
+.description .information .itinerary h2 {
+    margin-bottom: 16px;
+}
+
+.description .information .itinerary-item {
+    display: flex;
+    gap: 17px;
+    position: relative;
+}
+
+.description .information .itinerary-item .order {
+    flex-basis: 33px;
+    width: 33px;
+    height: 33px;
+    background: var(--primary-color);
+    border-radius: 100%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.description .information .itinerary-item:not(:last-child) .order::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(33px / 2);
+    z-index: -1;
+    width: 1px;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.description .information .itinerary-item .desc {
+    padding-bottom: 16px;
+}
+
+.description .information .agency {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.description .information .agency .logo {
+    flex-basis: 82px;
+}
+
+.description .information .agency .logo div {
+    width: 82px;
+    height: 82px;
+    border: 1px solid var(--primary-color);
+    border-radius: 100%;
+}
+
+.description .information .agency .title {
+    font-size: 1.4em;
 }
