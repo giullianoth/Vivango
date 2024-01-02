@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @import "variables";
 
 $theme-colors: (
@@ -16,5 +18,13 @@ $theme-colors: (
     "black"        :         $color-black,
     "blackAlpha161": $color-blackAlpha161,
 );
+
+body {
+    font-family: 'Jost', sans-serif;
+}
+
+.btn-burntSienna {
+    color: white !important;
+}
 
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
