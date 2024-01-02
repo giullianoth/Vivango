@@ -6,68 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vivango</title>
 
-    <link rel="stylesheet" href="assets/styles/css/style.css">
+  <script defer src="https://kit.fontawesome.com/fe0ca3f893.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="assets/styles/css/style.min.css">
 </head>
 
 <body>
-    <header class="container-fluid">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="logo">
-                    <h1 class="d-none">Vivango</h1>
-                    <a class="navbar-brand" href="#">
-                        <img src="assets/images/logo-1.svg" alt="Logo Vivango" width="216">
-                    </a>
-                </div>
+  <header class="container-fluid position-absolute top-0 start-0 z-3">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo">
+          <h1 class="d-none">Vivango</h1>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo-1.svg" alt="Logo Vivango" width="216">
+          </a>
+        </div>
+        <div class="menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pacotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Passeios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Marítimo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Aventura</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-                <div class="menu">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Explore</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ofertas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pacotes</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Passeios</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Marítmo</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Aventura</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="register">
+          <a href="#" class="btn btn-secondary">Entre ou cadastre-se</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-                <div class="register">
-                    <a href="#" class="btn btn-burntSienna">Entre ou cadastre-se</a>
-                </div>
+  <main>
+    <section class="hero container-fluid position-relative z-1">
+      <header class="hero-title container-fluid">
+        <h1 class="d-none">Experiências <span>inesquecíveis</span></h1>
+      </header>
+
+      <div class="hero-search container-fluid position-absolute bottom-0 start-0">
+        <div class="container">
+          <form action="">
+            <div class="row gap-2">
+              <div class="col-2">
+                <input type="text" name="location" id="location" placeholder="Localização">
+              </div>
+
+              <div class="col-3">
+                <input type="text" name="search" id="search" placeholder="Que aventura procura?">
+              </div>
+
+              <div class="date d-flex col-5">
+                <input type="date" name="date-start" id="date-start">
+                <input type="date" name="date-end" id="date-end">
+              </div>
+
+              <div class="col 2">
+                <button type="submit" class="btn btn-secondary">Pesquisar</button>
+              </div>
             </div>
-        </nav>
-    </header>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <main>
-        <section class="hero container-fluid">
-            <header class="hero-title container-fluid">
-                <h1>Experiências <span>inesquecíveis</span></h1>
-            </header>
-        </section>
-    </main>
+  <footer></footer>
 
-    <footer></footer>
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
