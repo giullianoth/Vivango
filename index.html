@@ -2,13 +2,16 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivango</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivango</title>
 
   <script defer src="https://kit.fontawesome.com/fe0ca3f893.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/styles/css/style.min.css">
+
+  <link rel="stylesheet" href="assets/shared/owl-carousel/OwlCarousel/dist/assets/owl.carousel.min.css">
+  <!-- <link rel="stylesheet" href="assets/shared/owl-carousel/OwlCarousel/dist/assets/owl.theme.default.min.css"> -->
 </head>
 
 <body>
@@ -73,7 +76,8 @@
               </div>
 
               <div class="col-3">
-                <input type="text" name="search" id="search" placeholder="Que aventura procura?" class="fw-medium text-gray2">
+                <input type="text" name="search" id="search" placeholder="Que aventura procura?"
+                  class="fw-medium text-gray2">
               </div>
 
               <div class="date d-flex col-5">
@@ -93,7 +97,7 @@
     <section class="adventure section-content-1 container-fluid">
       <div class="container">
         <header>
-          <h1 class="section-title text-jet">Aventure-se</h1>
+          <h1 class="section-title">Aventure-se</h1>
         </header>
 
         <div class="adventure-tabs">
@@ -115,13 +119,36 @@
             </li>
           </ul>
         </div>
+
+        <div class="adventure-carousel">
+          <div class="owl-carousel">
+            <div class="card adventure-carousel-item" style="width: 374px;">
+              <div class="card-img position-relative">
+                <img src="assets/images/quadriciclo.png" class="card-img-top" alt="Quadriciclo">
+
+                <div class="card rating fw-medium">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="card price">R$ 299,00</div>
+
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Quadriciclo 4x4, caverna aquática…</h5>
+                <p class="card-text"><i class="fa-regular fa-clock"></i> <span>Duração:</span> 3h30min</p>
+                <p class="card-text"><i class="fa-solid fa-users"></i> <span>Idades:</span> 11 a 85 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
   <footer></footer>
 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/shared/owl-carousel/OwlCarousel/dist/owl.carousel.min.js"></script>
+  <script src="assets/scripts/owl-carousel.js"></script>
 </body>
 
 </html>

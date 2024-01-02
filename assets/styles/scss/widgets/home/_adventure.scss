@@ -3,6 +3,7 @@
         width: fit-content;
         margin: auto;
         border-bottom: 1px solid #A7B2C9;
+        margin-bottom: 40px;
 
         ul {
             .nav-link {
@@ -17,6 +18,46 @@
                     border-color: #14A4D8;
                     border-width: 3px;
                 }
+            }
+        }
+    }
+
+    &-carousel {
+        .owl-stage-outer {
+            overflow: visible !important;
+        }
+
+        .owl-stage {
+            display: flex;
+            gap: 20px;
+        }
+
+        .owl-item {
+            float: none !important;
+        }
+
+        &-item {
+            .rating {
+                position: absolute;
+                top: 14px;
+                left: 14px;
+                padding: 12px;
+                flex-direction: row;
+                align-items: center;
+                gap: 2px;
+                border-radius: 100px;
+
+                i {
+                    color: #FFC107;
+                }
+            }
+
+            .price {
+                position: absolute;
+                bottom: 14px;
+                left: 14px;
+                padding: 12px;
+                border-radius: 100px;
             }
         }
     }

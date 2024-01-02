@@ -26,6 +26,7 @@ $theme-colors: (
 
 body {
     font-family: 'Jost', sans-serif !important;
+    color: #333;
 }
 
 h1,
@@ -44,10 +45,6 @@ textarea {
     border: none;
     outline: none;
     border-radius: 10px;
-}
-
-.btn-burntSienna {
-    color: white !important;
 }
 
 .section-content-1 {
@@ -74,4 +71,13 @@ textarea {
         height: 4px;
         background: url("../../images/title-line.png") no-repeat center;
     }
+}
+
+.btn-burntSienna {
+    color: white !important;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0 3px 6px #00000029;
 }
