@@ -2,29 +2,76 @@
 
 @import "variables";
 
+@import "widgets/home/hero";
+@import "widgets/home/adventure";
+
 $theme-colors: (
-    "pictonBlue"   :    $color-pictonBlue,
-    "cerulean"     :      $color-cerulean,
-    "burntSienna"  :   $color-burntSienna,
-    "amber"        :         $color-amber,
-    "powderBlue"   :    $color-powderBlue,
-    "jet"          :           $color-jet,
-    "silver"       :        $color-silver,
-    "whiteSmoke"   :    $color-whiteSmoke,
-    "silver2"      :       $color-silver2,
-    "gray"         :          $color-gray,
-    "gray2"        :         $color-gray2,
-    "white"        :         $color-white,
-    "black"        :         $color-black,
+    "pictonBlue" : $color-pictonBlue,
+    "cerulean" : $color-cerulean,
+    "burntSienna" : $color-burntSienna,
+    "amber" : $color-amber,
+    "powderBlue" : $color-powderBlue,
+    "jet" : $color-jet,
+    "silver" : $color-silver,
+    "whiteSmoke" : $color-whiteSmoke,
+    "silver2" : $color-silver2,
+    "gray" : $color-gray,
+    "gray2" : $color-gray2,
+    "white" : $color-white,
+    "black" : $color-black,
     "blackAlpha161": $color-blackAlpha161,
 );
 
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
 body {
-    font-family: 'Jost', sans-serif;
+    font-family: 'Jost', sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+}
+
+input,
+select,
+select option,
+textarea {
+    border: none;
+    outline: none;
+    border-radius: 10px;
 }
 
 .btn-burntSienna {
     color: white !important;
 }
 
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+.section-content-1 {
+    margin-block: 56px;
+}
+
+.section-content-2 {
+    padding-block: 56px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 3.4rem;
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: url("../../images/title-line.png") no-repeat center;
+    }
+}

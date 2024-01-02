@@ -1,0 +1,23 @@
+.adventure {
+    &-tabs {
+        width: fit-content;
+        margin: auto;
+        border-bottom: 1px solid #A7B2C9;
+
+        ul {
+            .nav-link {
+                color: #A7B2C9;
+                display: inline-block;
+                padding: 9px 18px;
+                font-size: 1.3rem;
+                transform: translateY(2px);
+
+                &.active {
+                    color: #333;
+                    border-color: #14A4D8;
+                    border-width: 3px;
+                }
+            }
+        }
+    }
+}
