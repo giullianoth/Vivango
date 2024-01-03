@@ -114,6 +114,16 @@
   font-size: 0.8em;
 }
 
+.optin-form {
+  max-width: 542px;
+}
+.optin-form input, .optin-form button {
+  width: 100%;
+}
+.optin-form .form-text {
+  font-size: 0.8em;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

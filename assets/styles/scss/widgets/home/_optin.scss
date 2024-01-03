@@ -1,0 +1,13 @@
+.optin {
+    &-form {
+        max-width: 542px;
+
+        input, button {
+            width: 100%;
+        }
+
+        .form-text {
+            font-size: 0.8em;
+        }
+    }
+}
