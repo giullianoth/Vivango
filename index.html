@@ -2,17 +2,19 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vivango</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivango</title>
 
   <script defer src="https://kit.fontawesome.com/fe0ca3f893.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="assets/styles/css/style.min.css">
+
+  <link rel="stylesheet" href="assets/shared/owl-carousel/OwlCarousel/dist/assets/owl.carousel.min.css">
 </head>
 
 <body>
-  <header class="container-fluid position-absolute top-0 start-0 z-3">
+  <header class="header container-fluid position-absolute top-0 start-0 z-3">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <div class="logo">
@@ -21,38 +23,40 @@
             <img src="assets/images/logo-1.svg" alt="Logo Vivango" width="216">
           </a>
         </div>
+
         <div class="menu">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
               <li class="nav-item">
-                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link text-white" href="#">Explore</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ofertas</a>
+                <a class="nav-link text-white" href="#">Ofertas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pacotes</a>
+                <a class="nav-link text-white" href="#">Pacotes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Passeios</a>
+                <a class="nav-link text-white" href="#">Passeios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Marítimo</a>
+                <a class="nav-link text-white" href="#">Marítimo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Aventura</a>
+                <a class="nav-link text-white" href="#">Aventura</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="register">
-          <a href="#" class="btn btn-burntSienna">Entre ou cadastre-se</a>
+          <a href="#" class="btn btn-burntSienna fw-medium"><i class="fa-regular fa-user"></i> Entre ou cadastre-se</a>
         </div>
       </div>
     </nav>
@@ -69,31 +73,358 @@
           <form action="">
             <div class="row gap-2">
               <div class="col-2">
-                <input type="text" name="location" id="location" placeholder="Localização">
+                <input type="text" name="location" id="location" placeholder="Localização" class="fw-medium text-gray2">
               </div>
 
               <div class="col-3">
-                <input type="text" name="search" id="search" placeholder="Que aventura procura?">
+                <input type="text" name="search" id="search" placeholder="Que aventura procura?"
+                  class="fw-medium text-gray2">
               </div>
 
               <div class="date d-flex col-5">
-                <input type="date" name="date-start" id="date-start">
-                <input type="date" name="date-end" id="date-end">
+                <input type="date" name="date-start" id="date-start" class="fw-medium text-gray2">
+                <input type="date" name="date-end" id="date-end" class="fw-medium text-gray2">
               </div>
 
               <div class="col 2">
-                <button type="submit" class="btn btn-burntSienna">Pesquisar</button>
+                <button type="submit" class="btn btn-burntSienna fw-medium">Pesquisar</button>
               </div>
             </div>
           </form>
         </div>
       </div>
     </section>
+
+    <section class="adventure section-content-1 container-fluid overflow-x-hidden pb-3">
+      <div class="container">
+        <header>
+          <h1 class="section-title">Aventure-se</h1>
+        </header>
+
+        <div class="adventure-tabs">
+          <ul class="nav nav-underline justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Todos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Passeios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Marítmo</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Aventura</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="adventure-carousel">
+          <div class="owl-carousel" id="adventure-carousel">
+            <div class="card adventure-carousel-item" style="width: 374px;">
+              <div class="card-img position-relative">
+                <img src="assets/images/quadriciclo.png" class="card-img-top" alt="Quadriciclo">
+
+                <div class="card rating fw-medium">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="card price fw-medium text-white bg-pictonBlue">R$ 299,00</div>
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fs-5">Quadriciclo 4x4, caverna aquática…</h2>
+                <p class="card-text fw-medium"><i class="fa-regular fa-clock"></i> <span class="text-silver fw-normal">Duração:</span> 3h30min</p>
+                <p class="card-text fw-medium fw-normal"><i class="fa-solid fa-users"></i> <span class="text-silver">Idades:</span> 11 a 85 anos</p>
+              </div>
+            </div>
+
+            <div class="card adventure-carousel-item" style="width: 374px;">
+              <div class="card-img position-relative">
+                <img src="assets/images/quadriciclo.png" class="card-img-top" alt="Quadriciclo">
+
+                <div class="card rating fw-medium">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="card price fw-medium text-white bg-pictonBlue">R$ 299,00</div>
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fs-5">Quadriciclo 4x4, caverna aquática…</h2>
+                <p class="card-text fw-medium"><i class="fa-regular fa-clock"></i> <span class="text-silver fw-normal">Duração:</span> 3h30min</p>
+                <p class="card-text fw-medium fw-normal"><i class="fa-solid fa-users"></i> <span class="text-silver">Idades:</span> 11 a 85 anos</p>
+              </div>
+            </div>
+
+            <div class="card adventure-carousel-item" style="width: 374px;">
+              <div class="card-img position-relative">
+                <img src="assets/images/quadriciclo.png" class="card-img-top" alt="Quadriciclo">
+
+                <div class="card rating fw-medium">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="card price fw-medium text-white bg-pictonBlue">R$ 299,00</div>
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fs-5">Quadriciclo 4x4, caverna aquática…</h2>
+                <p class="card-text fw-medium"><i class="fa-regular fa-clock"></i> <span class="text-silver fw-normal">Duração:</span> 3h30min</p>
+                <p class="card-text fw-medium fw-normal"><i class="fa-solid fa-users"></i> <span class="text-silver">Idades:</span> 11 a 85 anos</p>
+              </div>
+            </div>
+
+            <div class="card adventure-carousel-item" style="width: 374px;">
+              <div class="card-img position-relative">
+                <img src="assets/images/quadriciclo.png" class="card-img-top" alt="Quadriciclo">
+
+                <div class="card rating fw-medium">5.0 <i class="fa-solid fa-star"></i></div>
+                <div class="card price fw-medium text-white bg-pictonBlue">R$ 299,00</div>
+
+              </div>
+              <div class="card-body">
+                <h2 class="card-title fs-5">Quadriciclo 4x4, caverna aquática…</h2>
+                <p class="card-text fw-medium"><i class="fa-regular fa-clock"></i> <span class="text-silver fw-normal">Duração:</span> 3h30min</p>
+                <p class="card-text fw-medium fw-normal"><i class="fa-solid fa-users"></i> <span class="text-silver">Idades:</span> 11 a 85 anos</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose-city container-fluid section-content-2 bg-whiteSmoke">
+      <div class="container">
+        <header>
+          <h1 class="section-title fs-1 mb-5">Escolha uma cidade</h1>
+        </header>
+
+        <div class="choose-city-carousel">
+          <div class="owl-carousel" id="choose-city-carousel">
+            <div class="card">
+              <div class="card-body d-flex align-items-center">
+                <div class="image">
+                  <img src="assets/images/brasilia.png" alt="Brasília" width="54">
+                </div>
+
+                <h2 class="fs-4 m-0 px-3">Brasília</h2>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex align-items-center">
+                <div class="image">
+                  <img src="assets/images/brasilia.png" alt="Brasília" width="54">
+                </div>
+
+                <h2 class="fs-4 m-0 px-3">Rio de Janeiro</h2>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex align-items-center">
+                <div class="image">
+                  <img src="assets/images/brasilia.png" alt="Brasília" width="54">
+                </div>
+
+                <h2 class="fs-4 m-0 px-3">Porto Seguro</h2>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex align-items-center">
+                <div class="image">
+                  <img src="assets/images/brasilia.png" alt="Brasília" width="54">
+                </div>
+
+                <h2 class="fs-4 m-0 px-3">Gramado</h2>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-body d-flex align-items-center">
+                <div class="image">
+                  <img src="assets/images/brasilia.png" alt="Brasília" width="54">
+                </div>
+
+                <h2 class="fs-4 m-0 px-3">Salvador</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="best-ratings section-content-1 container-fluid overflow-x-hidden pb-3">
+      <div class="container">
+        <header class="mb-5">
+          <h1 class="section-title fs-1">Melhores avaliações</h1>
+        </header>
+
+        <div class="best-ratings-carousel">
+          <div class="owl-carousel" id="best-ratings-carousel">
+            <div class="card flex-row" style="width: 450px;">
+              <img src="assets/images/escalada.png" class="card-img-top" alt="Escalada">
+              <div class="card-body p-2">
+                <p class="card-text fw-medium">
+                  <i class="fa-solid fa-star text-amber"></i> 5.0
+                </p>
+                <h2 class="card-title fs-5 section-title">Escalada Monte Everest</h2>
+                <p class="card-text text-gray fw-medium lh-1">Lobuje/Lobuche 6119 m Peak está dentro do Parque Nacional Sagarmatha. Lobuje é um dos famosos picos de trekking da…</p>
+                <div class="action d-flex align-items-center justify-content-between">
+                  <div class="price text-pictonBlue fw-medium">R$ 1299,00</div>
+                  <a href="#" class="btn btn-burntSienna">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card flex-row" style="width: 450px;">
+              <img src="assets/images/escalada.png" class="card-img-top" alt="Escalada">
+              <div class="card-body p-2">
+                <p class="card-text fw-medium">
+                  <i class="fa-solid fa-star text-amber"></i> 5.0
+                </p>
+                <h2 class="card-title fs-5 section-title">Bungee Jumping - Nepal</h2>
+                <p class="card-text text-gray fw-medium lh-1">Idades entre 12 e 85 anos Duração: 6 a 8 horas Horário de início: confira a disponibilidade Ingresso digital, idioma: Inglês</p>
+                <div class="action d-flex align-items-center justify-content-between">
+                  <div class="price text-pictonBlue fw-medium">R$ 896,20</div>
+                  <a href="#" class="btn btn-burntSienna">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card flex-row" style="width: 450px;">
+              <img src="assets/images/escalada.png" class="card-img-top" alt="Escalada">
+              <div class="card-body p-2">
+                <p class="card-text fw-medium">
+                  <i class="fa-solid fa-star text-amber"></i> 5.0
+                </p>
+                <h2 class="card-title fs-5 section-title">Canyons Sul Balonismo</h2>
+                <p class="card-text text-gray fw-medium lh-1">Que tal um lindo voo em um balão de ar quente na região do Parque Nacional Aparados da Serra em Praia Grande/SC com todos os registros fotográficos gratuitos…</p>
+                <div class="action d-flex align-items-center justify-content-between">
+                  <div class="price text-pictonBlue fw-medium">R$ 699,90</div>
+                  <a href="#" class="btn btn-burntSienna">Saiba mais</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="optin container-fluid section-content-2 bg-pictonBlue">
+      <div class="container">
+        <header class="mb-5">
+          <h1 class="text-white text-center fs-3">Inscreva-se para Experiências Únicas!</h1>
+        </header>
+
+        <div class="optin-form mx-auto">
+          <form action="" class="form">
+            <div class="row">
+              <div class="col-4">
+                <input type="text" name="optin-name" id="optin-name" placeholder="Digite seu nome" class="p-2">
+              </div>
+
+              <div class="col-6">
+                <input type="email" name="optin-email" id="optin-email" placeholder="Digite seu email" class="p-2">
+              </div>
+
+              <div class="col-2">
+                <button type="submit" class="btn btn-burntSienna fw-normal">Assinar</button>
+              </div>
+            </div>
+          </form>
+
+          <p class="form-text text-white mt-3 lh-sm">Concordo em receber comunicações, ofertas e compartilhar meus dados pessoais com a vivango. Para mais informações, consulte as <a href="#" class="text-white">políticas de privacidade</a></p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer></footer>
+  <footer class="footer container-fluid bg-pictonBlue text-white p-0">
+    <div class="container section-content-2">
+      <div class="row">
+        <div class="footer-logo col-5">
+          <div class="logo">
+            <a href="#">
+              <h1 class="d-none">Vivango</h1>
+              <img src="assets/images/logo-1.svg" alt="Logo Vivango">
+            </a>
 
+            <p class="fw-medium">Explore, Aventure-se, Viva Experiências Únicas</p>
+          </div>
+
+          <div class="mobile-app">
+            <h2 class="fs-3">Baixe nosso app</h2>
+
+            <div class="links d-flex">
+              <a href="#" class="store-link"></a>
+              <a href="#" class="store-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-navigation col-7">
+          <div class="row">
+            <div class="col-4 mr-4">
+              <ul class="d-flex flex-column">
+                <li>
+                  <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="#">Ofertas</a>
+                </li>
+                <li>
+                  <a href="#">Pacotes</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-4 mr-4">
+              <ul class="d-flex flex-column">
+                <li>
+                  <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="#">Ofertas</a>
+                </li>
+                <li>
+                  <a href="#">Pacotes</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-4 mr-4">
+              <ul class="d-flex flex-column">
+                <li>
+                  <a href="#">Sobre nós</a>
+                </li>
+                <li>
+                  <a href="#">Lorem ipsum</a>
+                </li>
+                <li>
+                  <a href="#">Ofertas</a>
+                </li>
+                <li>
+                  <a href="#">Pacotes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid footer-rights">
+      <p class="text-center pt-3 pb-2 m-0">© 2023 VIVANGO Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <script src="assets/shared/owl-carousel/OwlCarousel/dist/owl.carousel.min.js"></script>
+  <script src="assets/scripts/owl-carousel.js"></script>
 </body>
 
 </html>
