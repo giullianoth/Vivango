@@ -124,6 +124,33 @@
   font-size: 0.8em;
 }
 
+.footer-logo .mobile-app .links {
+  gap: 14px;
+}
+.footer-logo .mobile-app .links .store-link {
+  width: 117px;
+  height: 35px;
+  border: 1px solid white;
+}
+.footer-navigation ul {
+  gap: 10px;
+}
+.footer-navigation ul li {
+  list-style: none;
+}
+.footer-navigation ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+.footer-rights {
+  background-color: rgba(0, 0, 0, 0.26);
+}
+.footer-rights p {
+  font-size: 1.2em;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
