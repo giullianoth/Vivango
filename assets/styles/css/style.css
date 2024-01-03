@@ -104,6 +104,7 @@
 .best-ratings-carousel .card-title {
   position: relative;
   padding-bottom: 4px;
+  text-align: left;
 }
 .best-ratings-carousel .card-title::before {
   background-position: left;
