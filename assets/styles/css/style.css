@@ -93,6 +93,26 @@
   width: 54px;
 }
 
+.best-ratings-carousel .owl-stage-outer {
+  overflow: visible !important;
+}
+.best-ratings-carousel .card img {
+  width: 206px;
+  height: 248px;
+  object-fit: cover;
+}
+.best-ratings-carousel .card-title {
+  position: relative;
+  padding-bottom: 4px;
+}
+.best-ratings-carousel .card-title::before {
+  background-position: left;
+  background-size: 60%;
+}
+.best-ratings-carousel .card-body p:last-child {
+  font-size: 0.8em;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

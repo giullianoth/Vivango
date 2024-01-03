@@ -11,4 +11,10 @@ $(document).ready(function () {
         items: 5,
         nav: true
     });
+
+    $(".owl-carousel#best-ratings-carousel").owlCarousel({
+        margin: 20,
+        autoWidth: true,
+        items: 3
+    });
 });
