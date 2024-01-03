@@ -1,0 +1,25 @@
+.header {
+    &.shaded {
+        box-shadow: 0 3px 6px #00000029;
+    }
+
+    .register {
+        .cart {
+            position: relative;
+            margin-right: 17px;
+            
+            .qt-notf {
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                border-radius: 100%;
+                position: absolute;
+                top: -8px;
+                right: -12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

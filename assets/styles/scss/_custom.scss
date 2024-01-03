@@ -2,13 +2,14 @@
 
 @import "variables";
 
+@import "widgets/header/header";
+@import "widgets/footer/footer";
+
 @import "widgets/home/hero";
 @import "widgets/home/adventure";
 @import "widgets/home/choose-city";
 @import "widgets/home/best-ratings";
 @import "widgets/home/optin";
-
-@import "widgets/footer/footer";
 
 $theme-colors: (
     "pictonBlue" : $color-pictonBlue,
