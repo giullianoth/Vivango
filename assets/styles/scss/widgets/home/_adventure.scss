@@ -27,15 +27,6 @@
             overflow: visible !important;
         }
 
-        .owl-stage {
-            display: flex;
-            gap: 20px;
-        }
-
-        .owl-item {
-            float: none !important;
-        }
-
         &-item {
             .rating {
                 position: absolute;

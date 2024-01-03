@@ -1,24 +1,14 @@
 $(document).ready(function () {
-    $(".owl-carousel").owlCarousel();
+    $(".owl-carousel#adventure-carousel").owlCarousel({
+        margin: 20,
+        autoWidth: true,
+        items: 4
+    });
 
-    // $('.owl-carousel').owlCarousel({
-    //     loop:true,
-    //     margin:10,
-    //     responsiveClass:true,
-    //     responsive:{
-    //         0:{
-    //             items:1,
-    //             nav:true
-    //         },
-    //         600:{
-    //             items:3,
-    //             nav:false
-    //         },
-    //         1000:{
-    //             items:5,
-    //             nav:true,
-    //             loop:false
-    //         }
-    //     }
-    // })
+    $(".owl-carousel#choose-city-carousel").owlCarousel({
+        margin: 20,
+        autoWidth: true,
+        items: 5,
+        nav: true
+    });
 });

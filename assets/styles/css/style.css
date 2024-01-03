@@ -63,13 +63,6 @@
 .adventure-carousel .owl-stage-outer {
   overflow: visible !important;
 }
-.adventure-carousel .owl-stage {
-  display: flex;
-  gap: 20px;
-}
-.adventure-carousel .owl-item {
-  float: none !important;
-}
 .adventure-carousel-item .rating {
   position: absolute;
   top: 14px;
@@ -90,6 +83,14 @@
   padding: 12px;
   border-radius: 100px;
   font-size: 1.2rem;
+}
+
+.choose-city-carousel .card-body {
+  padding: 4px;
+  gap: 16px;
+}
+.choose-city-carousel .card-body .image img {
+  width: 54px;
 }
 
 /*!
