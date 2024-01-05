@@ -183,6 +183,46 @@
   object-fit: cover;
 }
 
+.product-info .details .list ul {
+  position: relative;
+}
+.product-info .details .list ul::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #14A4D8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.product-info .details .itinerary-item {
+  position: relative;
+  z-index: 1;
+}
+.product-info .details .itinerary-item .order {
+  width: 33px;
+  height: 33px;
+  border-radius: 100%;
+  background-color: #14A4D8;
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 18px;
+}
+.product-info .details .itinerary-item:not(:last-child) .order::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #14A4D8;
+  position: absolute;
+  top: 0;
+  left: 16.5px;
+  z-index: -1;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -12599,6 +12639,10 @@ textarea {
   border: none;
   outline: none;
   border-radius: 10px;
+}
+
+li {
+  list-style-type: none;
 }
 
 .section-content-1 {

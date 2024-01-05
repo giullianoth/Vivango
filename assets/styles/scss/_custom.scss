@@ -12,6 +12,7 @@
 @import "widgets/home/optin";
 
 @import "widgets/details/gallery";
+@import "widgets/details/details";
 
 $theme-colors: (
     "pictonBlue" : $color-pictonBlue,
@@ -53,6 +54,10 @@ textarea {
     border: none;
     outline: none;
     border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
 }
 
 .section-content-1 {
