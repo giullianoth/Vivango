@@ -247,13 +247,42 @@
   font-size: 0.8em;
 }
 .product-info .confirm .card .select-qt .time-qt {
-  height: 206px;
+  height: 220px;
+}
+.product-info .confirm .card .select-qt .time-qt-small {
+  font-size: 0.7em;
+}
+.product-info .confirm .card .select-qt .time-qt-item {
+  border-bottom: 1px solid #F2F2F2;
 }
 .product-info .confirm .card .select-qt .time-qt-row {
   gap: 7px;
 }
-.product-info .confirm .card .select-qt .time-qt-row > * {
-  flex-basis: 50%;
+.product-info .confirm .card .select-qt .time-qt-row > :first-child {
+  flex-basis: 60%;
+}
+.product-info .confirm .card .select-qt .time-qt-row > :last-child {
+  flex-basis: 40%;
+}
+.product-info .confirm .card .select-qt .time-qt-row .qt {
+  border: 1px solid #7B7B7B;
+  border-radius: 10px;
+}
+.product-info .confirm .card .select-qt .time-qt-row .qt .minus,
+.product-info .confirm .card .select-qt .time-qt-row .qt .plus {
+  cursor: pointer;
+}
+.product-info .confirm .card .confirm-action {
+  border-top: 2px solid #BFBFBF;
+}
+
+.product-rating .comments .user-comment .user-photo {
+  width: 52px;
+  height: 52px;
+}
+.product-rating .comments .user-comment .user-photo img {
+  width: 100%;
+  height: 100%;
 }
 
 /*!

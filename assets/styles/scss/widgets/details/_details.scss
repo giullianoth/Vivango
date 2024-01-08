@@ -79,20 +79,62 @@
             right: -10px;
 
             .select-qt {
-                & > p {
+                &>p {
                     font-size: 0.8em;
                 }
 
                 .time-qt {
-                    height: 206px;
+                    height: 220px;
+
+                    &-small {
+                        font-size: 0.7em;
+                    }
+
+                    &-item {
+                        border-bottom: 1px solid #F2F2F2;
+                    }
 
                     &-row {
                         gap: 7px;
 
-                        & > * {
-                            flex-basis: 50%;
+                        &> :first-child {
+                            flex-basis: 60%;
+                        }
+
+                        &> :last-child {
+                            flex-basis: 40%;
+                        }
+
+                        .qt {
+                            border: 1px solid #7B7B7B;
+                            border-radius: 10px;
+
+                            .minus,
+                            .plus {
+                                cursor: pointer;
+                            }
                         }
                     }
+                }
+            }
+
+            .confirm-action {
+                border-top: 2px solid #BFBFBF;
+            }
+        }
+    }
+}
+
+.product-rating {
+    .comments {
+        .user-comment {
+            .user-photo {
+                width: 52px;
+                height: 52px;
+
+                img {
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
