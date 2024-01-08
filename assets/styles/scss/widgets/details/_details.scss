@@ -51,5 +51,50 @@
                 }
             }
         }
+
+        .agency {
+            &-logo {
+                width: 82px;
+                height: 82px;
+                border: 1px solid #14A4D8;
+                border-radius: 100%;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .confirm {
+        position: relative;
+
+        &-date {
+            padding: 10px;
+            border: 1px solid #7B7B7B;
+            border-radius: 10px;
+        }
+
+        .card {
+            width: 80%;
+            position: absolute;
+            top: -64px;
+            right: -10px;
+
+            .select-qt {
+                & > p {
+                    font-size: 0.8em;
+                }
+
+                .time-qt {
+                    height: 206px;
+
+                    &-row {
+                        gap: 7px;
+
+                        & > * {
+                            flex-basis: 50%;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

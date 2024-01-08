@@ -222,6 +222,39 @@
   left: 16.5px;
   z-index: -1;
 }
+.product-info .details .agency-logo {
+  width: 82px;
+  height: 82px;
+  border: 1px solid #14A4D8;
+  border-radius: 100%;
+  margin-right: 16px;
+}
+.product-info .confirm {
+  position: relative;
+}
+.product-info .confirm-date {
+  padding: 10px;
+  border: 1px solid #7B7B7B;
+  border-radius: 10px;
+}
+.product-info .confirm .card {
+  width: 80%;
+  position: absolute;
+  top: -64px;
+  right: -10px;
+}
+.product-info .confirm .card .select-qt > p {
+  font-size: 0.8em;
+}
+.product-info .confirm .card .select-qt .time-qt {
+  height: 206px;
+}
+.product-info .confirm .card .select-qt .time-qt-row {
+  gap: 7px;
+}
+.product-info .confirm .card .select-qt .time-qt-row > * {
+  flex-basis: 50%;
+}
 
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
