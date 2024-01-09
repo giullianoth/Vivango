@@ -279,10 +279,32 @@
 .product-rating .comments .user-comment .user-photo {
   width: 52px;
   height: 52px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin-right: 12px;
+  border: 1px solid #14A4D8;
 }
 .product-rating .comments .user-comment .user-photo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+.product-rating .comments .user-comment .user-name p {
+  font-size: 0.8em;
+}
+.product-rating .comments .user-comment .reply {
+  position: relative;
+  padding-left: 20px;
+}
+.product-rating .comments .user-comment .reply::before {
+  content: "";
+  width: 5px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #14A4D8;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*!
@@ -12692,6 +12714,10 @@ h5,
 h6,
 .h6 {
   font-family: inherit;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 input,
