@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vivango</title>
+
+  <script defer src="https://kit.fontawesome.com/fe0ca3f893.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="../../assets/styles/css/style.min.css">
+
+  <link rel="stylesheet" href="../../assets/shared/owl-carousel/OwlCarousel/dist/assets/owl.carousel.min.css">
+</head>
+
+<body>
+  <header class="header container-fluid position-absolute top-0 start-0 z-3">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo">
+          <h1 class="d-none">Vivango</h1>
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/images/logo-1.svg" alt="Logo Vivango">
+          </a>
+        </div>
+
+        <div class="menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <!-- <span class="navbar-toggler-icon"></span> -->
+            <span class="custom-toggler j_navbar_toggler"></span>
+          </button>
+
+          <div class="collapse navbar-collapse mt-3 mt-lg-0 p-3 p-lg-0 text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pacotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Passeios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Marítimo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Aventura</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a href="#" class="btn btn-burntSienna fw-medium"><i class="fa-regular fa-user"></i> Entre ou cadastre-se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="register d-none d-lg-block">
+          <a href="#" class="btn btn-burntSienna fw-medium"><i class="fa-regular fa-user"></i> Entre ou cadastre-se</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container-fluid position-relative z-1">
+      <header class="hero-title container-fluid text-center mx-auto">
+        <h1>Experiências <span class="fs-4 d-block">inesquecíveis</span></h1>
+      </header>
+
+      <div class="hero-search container-fluid position-absolute bottom-0 start-0">
+        <div class="container">
+          <form action="">
+            <div class="row gap-2 column-gap-md-0 row-gap-md-3 gap-lg-0">
+              <div class="col-12 col-md-6 col-lg-2">
+                <input type="text" name="location" id="location" placeholder="Localização" class="fw-medium text-gray2 p-2 p-lg-3 p-xl-4">
+              </div>
+
+              <div class="col-12 col-md-6 col-lg-4">
+                <input type="text" name="search" id="search" placeholder="Que aventura procura?"
+                  class="fw-medium text-gray2 p-2 p-lg-3 p-xl-4">
+              </div>
+
+              <div class="date d-flex col-12 col-lg-4 flex-column flex-md-row gap-2 gap-md-0">
+                <input type="date" name="date-start" id="date-start" class="fw-medium text-gray2 p-2 p-lg-3 p-xl-4">
+                <input type="date" name="date-end" id="date-end" class="fw-medium text-gray2 p-2 p-lg-3 p-xl-4">
+              </div>
+
+              <div class="col-12 col-lg-2">
+                <button type="submit" class="btn btn-burntSienna fw-medium p-2 p-lg-3 p-xl-4">Pesquisar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../../assets/scripts/script.js"></script>
+
+  <script src="../../assets/shared/owl-carousel/OwlCarousel/dist/owl.carousel.min.js"></script>
+  <script src="../../assets/scripts/owl-carousel.js"></script>
+</body>
+
+</html>

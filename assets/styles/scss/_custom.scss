@@ -32,8 +32,6 @@ $theme-colors: (
     "blackAlpha161": $color-blackAlpha161,
 );
 
-@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
-
 body {
     font-family: 'Jost', sans-serif !important;
     color: #333;
