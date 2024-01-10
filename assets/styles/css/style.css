@@ -126,10 +126,24 @@
   padding-top: 240px;
 }
 .hero-title h1, .hero-title .h1 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 900;
   max-width: 980px;
+  text-align: center;
+}
+@media screen and (min-width: 575px) {
+  .hero-title h1, .hero-title .h1 {
+    font-size: 4rem;
+  }
+}
+.hero-title h1 span, .hero-title .h1 span {
+  font-size: 0.6em;
+}
+@media screen and (min-width: 991px) {
+  .hero-title h1 span, .hero-title .h1 span {
+    text-align: right;
+  }
 }
 .hero-search {
   padding-bottom: 60px;
@@ -138,11 +152,6 @@
   .hero-search {
     padding-bottom: 140px;
   }
-}
-.hero-search input,
-.hero-search button {
-  width: 100%;
-  padding: 24px;
 }
 @media screen and (min-width: 767px) {
   .hero-search .date #date-start {
