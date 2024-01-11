@@ -125,16 +125,38 @@
   height: 100%;
   padding-top: 240px;
 }
+@media screen and (min-width: 575px) {
+  .hero-title {
+    padding-top: 200px;
+  }
+}
+@media screen and (min-width: 991px) {
+  .hero-title {
+    padding-top: 180px;
+  }
+}
 .hero-title h1, .hero-title .h1 {
   font-size: 2.2rem;
   text-transform: uppercase;
   font-weight: 900;
   max-width: 980px;
   text-align: center;
+  line-height: 1;
+  -webkit-text-stroke: 0.5px white;
 }
 @media screen and (min-width: 575px) {
   .hero-title h1, .hero-title .h1 {
     font-size: 4rem;
+  }
+}
+@media screen and (min-width: 767px) {
+  .hero-title h1, .hero-title .h1 {
+    font-size: 5.6rem;
+  }
+}
+@media screen and (min-width: 991px) {
+  .hero-title h1, .hero-title .h1 {
+    font-size: 8rem;
   }
 }
 .hero-title h1 span, .hero-title .h1 span {
@@ -143,6 +165,7 @@
 @media screen and (min-width: 991px) {
   .hero-title h1 span, .hero-title .h1 span {
     text-align: right;
+    font-size: 0.32em;
   }
 }
 .hero-search {

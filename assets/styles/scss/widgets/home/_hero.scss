@@ -9,28 +9,41 @@
         height: 100%;
         padding-top: 240px;
 
+        @media screen and (min-width: 575px) {
+            padding-top: 200px;
+        }
+
+        @media screen and (min-width: 991px) {
+            padding-top: 180px;
+        }
+
         h1 {
-            // font-size: 8.6rem;
             font-size: 2.2rem;
             text-transform: uppercase;
             font-weight: 900;
             max-width: 980px;
             text-align: center;
-            // color: white;
+            line-height: 1;
+            -webkit-text-stroke: 0.5px white;
 
             @media screen and (min-width: 575px) {
                 font-size: 4rem;
             }
 
+            @media screen and (min-width: 767px) {
+                font-size: 5.6rem;
+            }
+
+            @media screen and (min-width: 991px) {
+                font-size: 8rem;
+            }
+
             span {
                 font-size: 0.6em;
 
-                @media screen and (min-width: 575px) {
-                    
-                }
-
                 @media screen and (min-width: 991px) {
                     text-align: right;
+                    font-size: 0.32em;
                 }
             }
         }
