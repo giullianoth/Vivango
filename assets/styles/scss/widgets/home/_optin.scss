@@ -2,12 +2,16 @@
     &-form {
         max-width: 542px;
 
-        input, button {
-            width: 100%;
+        button {
+            border-radius: 10px;
         }
 
         .form-text {
             font-size: 0.8em;
+
+            a {
+                text-decoration: underline;
+            }
         }
     }
 }

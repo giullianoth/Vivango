@@ -1,13 +1,27 @@
 .footer {
     &-logo {
+        .logo {
+            img {
+                width: 260px;
+
+                @media screen and (min-width: 991px) {
+                    width: auto;
+                }
+            }
+        }
+
         .mobile-app {
             .links {
-                gap: 14px;
-
                 .store-link {
                     width: 117px;
                     height: 35px;
                     border: 1px solid white;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
                 }
             }
         }
@@ -15,16 +29,13 @@
 
     &-navigation {
         ul {
-            gap: 10px;
-
             li {
-                list-style: none;
-
                 a {
-                    text-decoration: none;
-                    color: white;
-                    font-weight: 500;
-                    font-size: 1.2em;
+                    font-size: 1.6rem;
+
+                    @media screen and (min-width: 575px) {
+                        font-size: 1.2rem;
+                    }
                 }
             }
         }
@@ -34,7 +45,9 @@
         background-color: rgba($color: #000000, $alpha: 0.26);
 
         p {
-            font-size: 1.2em;
+            @media screen and (min-width: 575px) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
