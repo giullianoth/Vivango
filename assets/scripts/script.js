@@ -1,7 +1,9 @@
 const navbar_toggler = document.querySelector(".j_navbar_toggler"),
     adventure_tabs = document.querySelector(".j_adventure_tabs")
 
-const adventure_tabs_links = adventure_tabs.querySelectorAll(".nav-link")
+console.log(adventure_tabs);
+
+const adventure_tabs_links = adventure_tabs ? adventure_tabs.querySelectorAll(".nav-link") : null
 
 navbar_toggler && navbar_toggler.addEventListener("click", ({ target }) => {
     target.classList.toggle("active")
