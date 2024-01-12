@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <header class="header shaded container-fluid position-absolute top-0 start-0 z-3 bg-white">
+  <!-- <header class="header shaded container-fluid position-absolute top-0 start-0 z-3 bg-white">
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <div class="logo">
@@ -34,28 +34,85 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-medium">
               <li class="nav-item">
-                <a class="nav-link" href="#">Explore</a>
+                <a class="nav-link text-jet" href="#">Explore</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Ofertas</a>
+                <a class="nav-link text-jet" href="#">Ofertas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Pacotes</a>
+                <a class="nav-link text-jet" href="#">Pacotes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Passeios</a>
+                <a class="nav-link text-jet" href="#">Passeios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Marítimo</a>
+                <a class="nav-link text-jet" href="#">Marítimo</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Aventura</a>
+                <a class="nav-link text-jet" href="#">Aventura</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div class="register">
+          <button class="cart btn btn-pictonBlue text-white">
+            <span class="qt-notf">1</span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+
+          <a href="#" class="btn btn-burntSienna fw-medium"><i class="fa-regular fa-user"></i> Entre ou cadastre-se</a>
+        </div>
+      </div>
+    </nav>
+  </header> -->
+
+  <header class="header shaded container-fluid position-absolute top-0 start-0 z-3">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="logo">
+          <h1 class="d-none">Vivango</h1>
+          <a class="navbar-brand" href="#">
+            <img src="../../assets/images/logo-2.svg" alt="Logo Vivango">
+          </a>
+        </div>
+
+        <div class="menu">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="custom-toggler j_navbar_toggler"></span>
+          </button>
+
+          <div class="collapse navbar-collapse mt-3 mt-lg-0 p-3 p-lg-0 text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0 fw-medium">
+              <li class="nav-item">
+                <a class="nav-link text-jet" href="#">Explore</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-jet" href="#">Ofertas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-jet" href="#">Pacotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-jet" href="#">Passeios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-jet" href="#">Marítimo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-jet" href="#">Aventura</a>
+              </li>
+              <li class="nav-item d-lg-none">
+                <a href="#" class="btn btn-burntSienna fw-medium"><i class="fa-regular fa-user"></i> Entre ou
+                  cadastre-se</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="register d-none d-lg-block">
           <button class="cart btn btn-pictonBlue text-white">
             <span class="qt-notf">1</span>
             <i class="fa-solid fa-cart-shopping"></i>
@@ -561,6 +618,8 @@
 
   <script src="../node_modules/jquery/dist/jquery.min.js"></script>
   <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="../assets/scripts/script.js"></script>
 
   <script src="../assets/shared/owl-carousel/OwlCarousel/dist/owl.carousel.min.js"></script>
   <script src="../assets/scripts/owl-carousel.js"></script>

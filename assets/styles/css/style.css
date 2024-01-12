@@ -3,6 +3,18 @@
 .header.shaded {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
+.header.shaded .custom-toggler {
+  background: #333333 !important;
+}
+.header.shaded .custom-toggler::before {
+  background: #333333 !important;
+}
+.header.shaded .custom-toggler::after {
+  background: #333333 !important;
+}
+.header.shaded .custom-toggler.active {
+  background: transparent !important;
+}
 .header .navbar .logo img {
   width: 168px;
 }
@@ -59,22 +71,24 @@
   right: 0;
   background: white;
   width: 260px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 @media screen and (min-width: 991px) {
   .header .navbar .menu .navbar-collapse {
     position: static;
     background: none;
     width: auto;
+    box-shadow: none;
   }
   .header .navbar .menu .navbar-collapse .nav-link {
     color: white;
   }
 }
-.header .register .cart {
+.header .cart {
   position: relative;
   margin-right: 17px;
 }
-.header .register .cart .qt-notf {
+.header .cart .qt-notf {
   width: 25px;
   height: 25px;
   background-color: red;
