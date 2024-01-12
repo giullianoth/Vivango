@@ -1,0 +1,106 @@
+.header {
+    &.shaded {
+        box-shadow: 0 3px 6px #00000029;
+    }
+
+    .navbar {
+        .logo {
+            img {
+                width: 168px;
+            }
+        }
+
+        .menu {
+            position: relative;
+
+            .navbar-toggler {
+                border: none;
+                padding: 0;
+                outline: none !important;
+
+                .custom-toggler {
+                    display: block;
+                    width: 30px;
+                    height: 2px;
+                    background: white;
+                    position: relative;
+                    transition: 0.3s;
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        width: 30px;
+                        height: 2px;
+                        background: white;
+                        position: absolute;
+                        left: 0;
+                        top: -8px;
+                        transition: 0.3s;
+                    }
+
+                    &::after {
+                        content: "";
+                        display: block;
+                        width: 30px;
+                        height: 2px;
+                        background: white;
+                        position: absolute;
+                        left: 0;
+                        bottom: -8px;
+                        transition: 0.3s;
+                    }
+
+                    &.active {
+                        background: transparent;
+
+                        &::before {
+                            transform: translateY(8px) rotate(45deg);
+                        }
+
+                        &::after {
+                            transform: translateY(-8px) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                border-radius: 10px;
+                position: absolute;
+                right: 0;
+                background: white;
+                width: 260px;
+
+                @media screen and (min-width: 991px) {
+                    position: static;
+                    background: none;
+                    width: auto;
+
+                    .nav-link {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    .register {
+        .cart {
+            position: relative;
+            margin-right: 17px;
+
+            .qt-notf {
+                width: 25px;
+                height: 25px;
+                background-color: red;
+                border-radius: 100%;
+                position: absolute;
+                top: -8px;
+                right: -12px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

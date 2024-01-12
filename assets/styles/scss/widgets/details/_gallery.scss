@@ -1,0 +1,37 @@
+.product-gallery {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 7px;
+    
+    .featured {
+        height: 396px;
+    }
+
+    .other-photos {
+        display: inherit;
+        grid-template-rows: inherit;
+        grid-template-columns: inherit;
+        gap: inherit;
+    }
+    
+    .photo {
+        height: calc(198px - (7px / 2));
+        position: relative;
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #000000, $alpha: 0.6);
+        }
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

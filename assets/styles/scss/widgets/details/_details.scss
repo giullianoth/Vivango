@@ -1,0 +1,128 @@
+.product-info {
+    .details {
+        .list {
+            ul {
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 5px;
+                    height: 100%;
+                    border-radius: 5px;
+                    background-color: #14A4D8;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        .itinerary {
+            &-item {
+                position: relative;
+                z-index: 1;
+
+                .order {
+                    width: 33px;
+                    height: 33px;
+                    border-radius: 100%;
+                    background-color: #14A4D8;
+                    color: white;
+                    font-size: 1.2em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 18px;
+                }
+
+                &:not(:last-child) {
+                    .order {
+                        &::before {
+                            content: "";
+                            width: 1px;
+                            height: 100%;
+                            background-color: #14A4D8;
+                            position: absolute;
+                            top: 0;
+                            left: 16.5px;
+                            z-index: -1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .agency {
+            &-logo {
+                width: 82px;
+                height: 82px;
+                border: 1px solid #14A4D8;
+                border-radius: 100%;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .confirm {
+        position: relative;
+
+        &-date {
+            padding: 10px;
+            border: 1px solid #7B7B7B;
+            border-radius: 10px;
+        }
+
+        .card {
+            width: 80%;
+            position: absolute;
+            top: -64px;
+            right: -10px;
+
+            .select-qt {
+                &>p {
+                    font-size: 0.8em;
+                }
+
+                .time-qt {
+                    height: 220px;
+
+                    &-small {
+                        font-size: 0.7em;
+                    }
+
+                    &-item {
+                        &:not(:last-child) {
+                            border-bottom: 1px solid #F2F2F2;
+                        }
+                    }
+
+                    &-row {
+                        gap: 7px;
+
+                        &> :first-child {
+                            flex-basis: 60%;
+                        }
+
+                        &> :last-child {
+                            flex-basis: 40%;
+                        }
+
+                        .qt {
+                            border: 1px solid #7B7B7B;
+                            border-radius: 10px;
+
+                            .minus,
+                            .plus {
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .confirm-action {
+                border-top: 2px solid #BFBFBF;
+            }
+        }
+    }
+}

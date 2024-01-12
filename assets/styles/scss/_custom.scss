@@ -1,0 +1,117 @@
+// FONTES DO GOOGLE FONTS (https://fonts.google.com/)
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@import "variables";
+
+@import "widgets/header/header";
+@import "widgets/footer/footer";
+
+@import "widgets/home/hero";
+@import "widgets/home/adventure";
+@import "widgets/home/choose-city";
+@import "widgets/home/best-ratings";
+@import "widgets/home/optin";
+
+@import "widgets/details/gallery";
+@import "widgets/details/details";
+@import "widgets/details/rating";
+
+$theme-colors: (
+    "pictonBlue" : $color-pictonBlue,
+    "cerulean" : $color-cerulean,
+    "burntSienna" : $color-burntSienna,
+    "amber" : $color-amber,
+    "powderBlue" : $color-powderBlue,
+    "jet" : $color-jet,
+    "silver" : $color-silver,
+    "whiteSmoke" : $color-whiteSmoke,
+    "silver2" : $color-silver2,
+    "gray" : $color-gray,
+    "gray2" : $color-gray2,
+    "white" : $color-white,
+    "black" : $color-black,
+    "blackAlpha161": $color-blackAlpha161,
+);
+
+$enable-negative-margins: true;
+
+body {
+    font-family: 'Jost', sans-serif !important;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+input,
+select,
+select option,
+textarea {
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.section-content-1 {
+    margin-block: 56px;
+}
+
+.section-content-2 {
+    padding-block: 56px;
+}
+
+.section-title {
+    text-align: center;
+    position: relative;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 767px) {
+        font-size: 3.4rem;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: url("../../images/title-line.png") no-repeat center / 40%;
+
+        @media screen and (min-width: 767px) {
+            background-size: auto;
+        }
+    }
+}
+
+.btn-burntSienna {
+    color: white !important;
+}
+
+.card {
+    border: none !important;
+    box-shadow: 0 3px 6px #00000029;
+}
+
+.owl-carousel {
+    &.visible-items {
+        .owl-stage-outer {
+            overflow: visible !important;
+        }
+    }
+}
