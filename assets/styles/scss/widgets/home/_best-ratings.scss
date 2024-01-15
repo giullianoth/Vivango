@@ -1,21 +1,23 @@
 .best-ratings {
     &-carousel {
-        .owl-stage-outer {
-            overflow: visible !important;
-        }
-
         .card {
+            width: 280px;
+
+            @media screen and (min-width: 767px) {
+                width: 450px;
+
+                img {
+                    width:206px;
+                }
+            }
+
             img {
-                width:206px;
+                width: 320px;
                 height:248px;
                 object-fit: cover;
             }
 
             &-title {
-                position: relative;
-                padding-bottom: 4px;
-                text-align: left;
-
                 &::before {
                     background-position: left;
                     background-size: 60%;

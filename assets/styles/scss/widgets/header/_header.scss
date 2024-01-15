@@ -1,6 +1,22 @@
 .header {
     &.shaded {
         box-shadow: 0 3px 6px #00000029;
+
+        .custom-toggler {
+            background: #333333 !important;
+
+            &::before {
+                background: #333333 !important;
+            }
+
+            &::after {
+                background: #333333 !important;
+            }
+
+            &.active {
+                background: transparent !important;
+            }
+        }
     }
 
     .navbar {
@@ -70,11 +86,13 @@
                 right: 0;
                 background: white;
                 width: 260px;
+                box-shadow: 0 3px 6px #00000029;
 
                 @media screen and (min-width: 991px) {
                     position: static;
                     background: none;
                     width: auto;
+                    box-shadow: none;
 
                     .nav-link {
                         color: white;
@@ -84,23 +102,21 @@
         }
     }
 
-    .register {
-        .cart {
-            position: relative;
-            margin-right: 17px;
+    .cart {
+        position: relative;
+        margin-right: 17px;
 
-            .qt-notf {
-                width: 25px;
-                height: 25px;
-                background-color: red;
-                border-radius: 100%;
-                position: absolute;
-                top: -8px;
-                right: -12px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
+        .qt-notf {
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            border-radius: 100%;
+            position: absolute;
+            top: -8px;
+            right: -12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 }

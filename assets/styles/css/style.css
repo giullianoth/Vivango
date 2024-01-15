@@ -3,6 +3,18 @@
 .header.shaded {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
+.header.shaded .custom-toggler {
+  background: #333333 !important;
+}
+.header.shaded .custom-toggler::before {
+  background: #333333 !important;
+}
+.header.shaded .custom-toggler::after {
+  background: #333333 !important;
+}
+.header.shaded .custom-toggler.active {
+  background: transparent !important;
+}
 .header .navbar .logo img {
   width: 168px;
 }
@@ -59,22 +71,24 @@
   right: 0;
   background: white;
   width: 260px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
 @media screen and (min-width: 991px) {
   .header .navbar .menu .navbar-collapse {
     position: static;
     background: none;
     width: auto;
+    box-shadow: none;
   }
   .header .navbar .menu .navbar-collapse .nav-link {
     color: white;
   }
 }
-.header .register .cart {
+.header .cart {
   position: relative;
   margin-right: 17px;
 }
-.header .register .cart .qt-notf {
+.header .cart .qt-notf {
   width: 25px;
   height: 25px;
   background-color: red;
@@ -87,31 +101,39 @@
   align-items: center;
 }
 
-.footer-logo .mobile-app .links {
-  gap: 14px;
+.footer-logo .logo img {
+  width: 260px;
+}
+@media screen and (min-width: 991px) {
+  .footer-logo .logo img {
+    width: auto;
+  }
 }
 .footer-logo .mobile-app .links .store-link {
   width: 117px;
   height: 35px;
   border: 1px solid white;
 }
-.footer-navigation ul {
-  gap: 10px;
-}
-.footer-navigation ul li {
-  list-style: none;
+.footer-logo .mobile-app .links .store-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .footer-navigation ul li a {
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1.6rem;
+}
+@media screen and (min-width: 575px) {
+  .footer-navigation ul li a {
+    font-size: 1.2rem;
+  }
 }
 .footer-rights {
   background-color: rgba(0, 0, 0, 0.26);
 }
-.footer-rights p {
-  font-size: 1.2em;
+@media screen and (min-width: 575px) {
+  .footer-rights p {
+    font-size: 1.2rem;
+  }
 }
 
 .hero {
@@ -222,18 +244,21 @@
   width: 54px;
 }
 
-.best-ratings-carousel .owl-stage-outer {
-  overflow: visible !important;
+.best-ratings-carousel .card {
+  width: 280px;
+}
+@media screen and (min-width: 767px) {
+  .best-ratings-carousel .card {
+    width: 450px;
+  }
+  .best-ratings-carousel .card img {
+    width: 206px;
+  }
 }
 .best-ratings-carousel .card img {
-  width: 206px;
+  width: 320px;
   height: 248px;
   object-fit: cover;
-}
-.best-ratings-carousel .card-title {
-  position: relative;
-  padding-bottom: 4px;
-  text-align: left;
 }
 .best-ratings-carousel .card-title::before {
   background-position: left;
@@ -246,27 +271,54 @@
 .optin-form {
   max-width: 542px;
 }
-.optin-form input, .optin-form button {
-  width: 100%;
+.optin-form button {
+  border-radius: 10px;
 }
 .optin-form .form-text {
   font-size: 0.8em;
 }
+.optin-form .form-text a {
+  text-decoration: underline;
+}
+
+.product-header .rating {
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 575px) {
+  .product-header .rating {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 991px) {
+  .product-header .rating {
+    font-size: 1.4rem;
+  }
+}
 
 .product-gallery {
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: 1fr 1fr;
   gap: 7px;
+}
+@media screen and (min-width: 991px) {
+  .product-gallery {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .product-gallery .featured {
   height: 396px;
 }
 .product-gallery .other-photos {
-  display: inherit;
-  grid-template-rows: inherit;
-  grid-template-columns: inherit;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   gap: inherit;
+}
+@media screen and (min-width: 575px) {
+  .product-gallery .other-photos {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .product-gallery .photo {
   height: 194.5px;
@@ -299,21 +351,10 @@
   top: 0;
   left: 0;
 }
-.product-info .details .itinerary-item {
-  position: relative;
-  z-index: 1;
-}
 .product-info .details .itinerary-item .order {
   width: 33px;
   height: 33px;
   border-radius: 100%;
-  background-color: #14A4D8;
-  color: white;
-  font-size: 1.2em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 18px;
 }
 .product-info .details .itinerary-item:not(:last-child) .order::before {
   content: "";
@@ -328,9 +369,12 @@
 .product-info .details .agency-logo {
   width: 82px;
   height: 82px;
-  border: 1px solid #14A4D8;
   border-radius: 100%;
-  margin-right: 16px;
+}
+.product-info .details .agency-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .product-info .confirm {
   position: relative;
@@ -341,10 +385,21 @@
   border-radius: 10px;
 }
 .product-info .confirm .card {
-  width: 80%;
-  position: absolute;
-  top: -64px;
-  right: -10px;
+  max-width: 360px;
+}
+@media screen and (min-width: 991px) {
+  .product-info .confirm .card {
+    width: 100%;
+    position: absolute;
+    top: -64px;
+    right: -10px;
+    max-width: none;
+  }
+}
+@media screen and (min-width: 1199px) {
+  .product-info .confirm .card {
+    width: 80%;
+  }
 }
 .product-info .confirm .card .select-qt > p {
   font-size: 0.8em;
@@ -368,24 +423,22 @@
   flex-basis: 40%;
 }
 .product-info .confirm .card .select-qt .time-qt-row .qt {
-  border: 1px solid #7B7B7B;
   border-radius: 10px;
 }
 .product-info .confirm .card .select-qt .time-qt-row .qt .minus,
 .product-info .confirm .card .select-qt .time-qt-row .qt .plus {
   cursor: pointer;
 }
-.product-info .confirm .card .confirm-action {
-  border-top: 2px solid #BFBFBF;
-}
 
+@media screen and (min-width: 575px) {
+  .product-rating .rating {
+    font-size: 1.4rem;
+  }
+}
 .product-rating .comments .user-comment .user-photo {
   width: 52px;
   height: 52px;
-  overflow: hidden;
   border-radius: 100%;
-  margin-right: 12px;
-  border: 1px solid #14A4D8;
 }
 .product-rating .comments .user-comment .user-photo img {
   width: 100%;
@@ -399,7 +452,6 @@
   font-size: 0.8em;
 }
 .product-rating .comments .user-comment .reply {
-  position: relative;
   padding-left: 20px;
 }
 .product-rating .comments .user-comment .reply::before {

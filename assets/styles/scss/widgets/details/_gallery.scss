@@ -1,20 +1,28 @@
 .product-gallery {
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr;
     gap: 7px;
-    
+
+    @media screen and (min-width: 991px) {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+
     .featured {
         height: 396px;
     }
 
     .other-photos {
-        display: inherit;
-        grid-template-rows: inherit;
-        grid-template-columns: inherit;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: 1fr;
         gap: inherit;
+
+        @media screen and (min-width: 575px) {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+        }
     }
-    
+
     .photo {
         height: calc(198px - (7px / 2));
         position: relative;
